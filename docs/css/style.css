@@ -70,6 +70,12 @@ ol {
 .pt100 {
   padding-top: 100px;
 }
+.pt75 {
+  padding-top: 75px;
+}
+.pt50 {
+  padding-top: 50px;
+}
 
 .set-bg {
   background-repeat: no-repeat;
@@ -78,6 +84,7 @@ ol {
 
 .section-title {
   font-size: 60px;
+  text-align: left;
 }
 
 .section-title span {
@@ -160,6 +167,21 @@ ol {
   border: none;
   background-color: #000;
   margin-right: 15px;
+  z-index: 1;
+}
+
+.resume-button {
+  display: inline-block;
+  font-size: 14px;
+  min-width: 140px;
+  text-align: center;
+  padding: 15px 10px;
+  position: relative;
+  color: #fff;
+  border: none;
+  background-color: #000;
+  /* margin-right: 15px; */
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -362,6 +384,28 @@ ol {
   padding-top: 20px;
 }
 
+.site-logo a {
+  color: #212529;
+}
+
+.header-section a:hover {
+  color: #0056B3;
+  transition: all 0.3s ease 0s;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu .active-link {
+  -webkit-text-decoration: #0056B3 solid underline;
+  text-decoration: #0056B3 solid underline;
+  -webkit-text-underline-position: under;
+  text-underline-position: under;
+
+}
+
 .main-menu ul {
   list-style: none;
 }
@@ -395,6 +439,10 @@ ol {
   padding: 110px 0;
 }
 
+.intro-section a {
+  color: #0056B3;
+}
+
 /*------------------------
     Portfolio Section
 --------------------------*/
@@ -416,8 +464,12 @@ ol {
   cursor: pointer;
 }
 
+.portfolio-filter li:hover {
+  color: #0056B3;
+}
+
 .portfolio-filter li.mixitup-control-active {
-  color: #001418;
+  color: #0056B3;
 }
 
 .portfolios-area .gallery-block {
@@ -507,15 +559,47 @@ ol {
   transform: scale(1);
 }
 
+.invision-app {
+  width: 972px;
+  height: 720px;
+}
+
+.link-color {
+  color: #0056B3;
+}
+
+.link-color:hover {
+  text-decoration: underline;
+  text-underline-position: below;
+}
+
 /*------------------------
     Footer Section
 --------------------------*/
+
+.footer-title a {
+  color: #0056B3;
+}
+
+.footer-title a:hover {
+  text-decoration: underline;
+  text-underline-position: below;
+}
+
 .footer-section {
   padding: 110px 0;
 }
 
 .footer-section .copyright {
   font-size: 12px;
+  color: #979797;
+}
+
+.colorlib-style {
+  color: #979797;
+}
+
+.colorlib-style:hover {
   color: #979797;
 }
 
@@ -526,8 +610,12 @@ ol {
 
 .social-links a {
   color: #979797;
-  font-size: 15px;
+  font-size: 30px;
   margin-right: 30px;
+}
+
+.social-links a:hover {
+    color: #0056B3;
 }
 
 .social-links a:last-child {
@@ -537,11 +625,21 @@ ol {
 /*------------------------
     About Page
 --------------------------*/
+.page-section a {
+  color: #0056B3;
+}
+
+.page-section a:hover {
+  text-decoration: underline;
+  text-underline-position: below;
+}
+
 .pic-frame {
   position: relative;
   padding-left: 25px;
   padding-bottom: 25px;
   display: inline-block;
+  opacity: 1;
 }
 
 .pic-frame:after {
@@ -613,62 +711,19 @@ ol {
   margin-bottom: 30px;
 }
 
-/*------------------------
-    Contact Page
---------------------------*/
-.contect-tect {
-  text-align: center;
-  margin-bottom: 70px;
+.videoWrapper {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
 }
-
-.contect-tect h2 {
-  font-size: 24px;
-  margin-bottom: 30px;
-}
-
-.contect-tect p {
-  font-size: 17px;
-}
-
-.contact-form {
-  display: block;
-  width: 100%;
-}
-
-.contact-form input {
-  padding-left: 25px;
-  height: 60px;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #000;
-  margin-bottom: 30px;
-  font-size: 12px;
-}
-
-.contact-form textarea {
-  padding-left: 25px;
-  height: 200px;
-  width: 100%;
-  border: none;
-  border-bottom: 2px solid #000;
-  margin-bottom: 30px;
-  font-size: 12px;
-}
-
-.contact-form ::-webkit-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form :-ms-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form ::-ms-input-placeholder {
-  font-style: italic;
-}
-
-.contact-form ::placeholder {
-  font-style: italic;
+.videoWrapper iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  /* padding-top: 75px; */
 }
 
 /* ===========================
@@ -682,6 +737,11 @@ ol {
 
 /* Medium screen : 992px. */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 60px;
+    text-align: left;
+  }
+  
   .portfolio-item {
     height: 450px;
   }
@@ -689,6 +749,11 @@ ol {
 
 /* Tablet :768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 50px;
+    text-align: left;
+  }
+
   .body-pad {
     padding: 0 30px;
   }
@@ -699,6 +764,11 @@ ol {
 
 /* Large Mobile :480px. */
 @media only screen and (max-width: 767px) {
+  .section-title {
+    font-size: 40px;
+    text-align: left;
+  }
+
   .body-pad {
     padding: 0 15px;
   }
@@ -751,6 +821,40 @@ ol {
 /* small Mobile :320px. */
 @media only screen and (max-width: 479px) {
   .section-title {
-    font-size: 30px;
+    font-size: 35px;
+    text-align: left;
+  }
+
+  .portfolio-item {
+    height: 300px;
+  }
+
+  .portfolio-filter {
+    padding-bottom: 50px;
+  }
+
+  .pt100 {
+    padding-top: 40px;
+  }
+
+  .pic-frame {
+    display: none;
+  }
+
+  .content-section img {
+    padding-top: 30px;
+  }
+
+  .content-section .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-section {
+    padding: 60px 0;
+  }
+
+  .footer-title {
+    font-size: 16px;
   }
 }
