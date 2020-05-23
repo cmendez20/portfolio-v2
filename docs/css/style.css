@@ -573,6 +573,11 @@ ol {
   text-underline-position: below;
 }
 
+.gif-video {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /*------------------------
     Footer Section
 --------------------------*/
