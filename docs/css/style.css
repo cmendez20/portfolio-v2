@@ -574,8 +574,15 @@ ol {
 }
 
 .gif-video {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding-top: 75px;
+}
+
+@media only screen and (max-width: 576px) {
+  .gif-video {
+    padding-top: 30px;
+  }
 }
 
 /*------------------------
